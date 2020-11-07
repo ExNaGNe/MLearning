@@ -105,35 +105,6 @@ namespace Machine
 
         private void Set_Py()
         {
-            //var info = new ProcessStartInfo(@"cmd");    //cmd창 설정
-            //info.UseShellExecute = false;
-            //info.RedirectStandardOutput = true;
-            //info.CreateNoWindow = true;
-            //info.RedirectStandardInput = true;
-            //info.RedirectStandardOutput = true;
-
-            //var cmdProcess = new Process();             //cmd창 실행
-            //cmdProcess.StartInfo = info;
-            //cmdProcess.Start();
-            //cmdProcess.StandardInput.Write("where python" + Environment.NewLine);
-            //cmdProcess.StandardInput.Close();
-
-            //string result = cmdProcess.StandardOutput.ReadToEnd();
-            //StringBuilder sb = new StringBuilder();
-            //sb.Append(result);
-            //string[] str = sb.ToString().Split(Environment.NewLine.ToCharArray());
-            //var temp = from path in str
-            //           where path.Split(@"\".ToCharArray()).Length > 2
-            //           select path;
-
-            //var pypath = from path in temp
-            //             where path.Split(@"\".ToCharArray())[path.Split(@"\".ToCharArray()).Length - 2].ToLower().StartsWith("python")
-            //             select path;
-            //PythonPath = pypath.ToArray<string>()[0];
-
-            //cmdProcess.WaitForExit();
-            //cmdProcess.Close();
-
             myProcessStartInfo = new ProcessStartInfo();
             myProcessStartInfo.FileName = $"{ROOT}{MYPYTHON}";
             myProcessStartInfo.UseShellExecute = false;
